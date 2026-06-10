@@ -1,0 +1,23 @@
+{
+    "name": "affordmed-microservices",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "build": "tsc",
+        "start:logging": "ts-node logging_middleware/index.ts",
+        "start:scheduler": "ts-node vehicle_maintenance_scheduler/index.ts",
+        "start:notifications": "ts-node notification_app_be/index.ts"
+    },
+    "dependencies": {
+        "dotenv": "^16.3.1",
+        "express": "^4.18.2",
+        "pg": "^8.21.0"
+    },
+    "devDependencies": {
+        "@types/express": "^4.17.21",
+        "@types/node": "^20.10.0",
+        "@types/pg": "^8.20.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.3.3"
+    }
+}
